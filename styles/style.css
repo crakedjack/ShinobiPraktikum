@@ -532,27 +532,27 @@ html {
 }
 
 .technics__img_sharOne:hover {
-    content: url(https://upload.wikimedia.org/wikipedia/commons/7/7a/Mangekyou_Sharingan_Sasuke.svg);
+    content: url(../images/Sharingan/kisspng-sasuke-uchiha-kakashi-hatake-itachi-uchiha-madara-5d2c37a610eeb4.8798684215631789180694.png);
     animation: rotation 20s infinite linear;
 }
 
 .technics__img_sharTwo:hover {
-    content: url('images/Sharingan/kisspng-uchiha-clan-sasuke-uchiha-obito-uchiha-apple-you-b-sharingan-5b2085e87ba538.2861408015288580885065.png');
+    content: url(../images/Sharingan/kisspng-uchiha-clan-sasuke-uchiha-obito-uchiha-apple-you-b-sharingan-5b2085e87ba538.2861408015288580885065.png);
     animation: rotation 20s infinite linear;
 }
 
 .technics__img_sharThree:hover {
-    content: url('images/Sharingan/klipartz.com.png');
+    content: url(../images/Sharingan/klipartz.com.png);
     animation: rotation 20s infinite linear;
 }
 
 .technics__img_sharFour:hover {
-    content: url('images/Sharingan/klipartz.com\ \(1\).png');
+    content: url(../images/Sharingan/klipartz.com\ \(1\).png);
     animation: rotation 20s infinite linear;
 }
 
 .technics__img_sharFife:hover {
-    content: url('images/Sharingan/klipartz.com\ \(2\).png');
+    content: url(../images/Sharingan/klipartz.com\ \(2\).png);
     animation: rotation 20s infinite linear;
 }
 
