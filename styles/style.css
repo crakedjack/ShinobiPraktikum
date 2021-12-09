@@ -532,7 +532,7 @@ html {
 }
 
 .technics__img_sharOne:hover {
-    content: url('https://upload.wikimedia.org/wikipedia/commons/7/7a/Mangekyou_Sharingan_Sasuke.svg');
+    content: url(https://upload.wikimedia.org/wikipedia/commons/7/7a/Mangekyou_Sharingan_Sasuke.svg);
     animation: rotation 20s infinite linear;
 }
 
