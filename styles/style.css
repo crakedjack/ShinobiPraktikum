@@ -532,7 +532,7 @@ html {
 }
 
 .technics__img_sharOne:hover {
-    content: url('images/Sharingan/kisspng-sasuke-uchiha-kakashi-hatake-itachi-uchiha-madara-5d2c37a610eeb4.8798684215631789180694.png');
+    content: url('https://upload.wikimedia.org/wikipedia/commons/7/7a/Mangekyou_Sharingan_Sasuke.svg');
     animation: rotation 20s infinite linear;
 }
 
