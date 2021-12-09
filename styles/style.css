@@ -1,0 +1,677 @@
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 1;
+
+    }
+
+    50% {
+        opacity: 0;
+
+    }
+
+    75% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+
+
+}
+
+@keyframes opacityRev {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0;
+
+    }
+
+
+    50% {
+        opacity: 1;
+
+    }
+
+    75% {
+        opacity: 1;
+
+    }
+
+    100% {
+        opacity: 0;
+
+    }
+
+
+}
+
+html {
+    background-color: #f2f2f2;
+}
+
+
+.page {
+    min-width: 1100px;
+    max-width: 2000px;
+    margin: 0 auto;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    min-height: 600px;
+    min-width: 1100px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.header__square-pic {
+    opacity: 0;
+    right: 0;
+    top: 15px;
+    position: absolute;
+    /*  height: 568px;
+    width: 568px; */
+    /*   background-color: #2f80ed;
+    border: 2px soli #000; */
+    z-index: 0;
+    /*  transform: rotate(15deg); */
+    animation: opacityRev 20s linear infinite, rotation 20s infinite linear;
+}
+
+.header__square {
+    right: 0;
+    top: 18px;
+    position: absolute;
+    height: 700px;
+    width: 700px;
+    background-color: #2f80ed;
+    border: 2px soli #000;
+    transform: rotate(15deg);
+    animation: opacity 20s linear infinite, rotation 20s infinite linear;
+
+}
+
+
+/* и элемента с модификатором вида ключ-значение */
+.table__cell_theme_dark {
+    width: 200px;
+    color: white;
+    margin-right: 0;
+    margin-top: 80px;
+}
+
+/* HEader */
+
+.header__logo {
+    position: absolute;
+    width: 183px;
+    height: 32px;
+    left: 64px;
+    top: 30px;
+    z-index: 2;
+    white-space: nowrap;
+    font-weight: 300;
+    font-size: 36px;
+    letter-spacing: -2px;
+}
+
+.header__title {
+    font-weight: bold;
+    font-size: 102px;
+    line-height: 1;
+    position: absolute;
+    width: 730px;
+    left: 64px;
+    z-index: 2;
+}
+
+.header__subtitle {
+    font-size: 18px;
+    width: 388px;
+    position: absolute;
+    bottom: 30px;
+    left: 64px;
+    font-weight: normal;
+    z-index: 2;
+}
+
+.header__main-illustration {
+    position: absolute;
+    width: 765px;
+    height: 608px;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+}
+
+
+/* description */
+
+.description {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.two__columns-brief {
+    width: 175px;
+    line-height: 1.2;
+    font-size: 18px;
+    color: #2f80ed;
+}
+
+.two__columns {
+    margin: 100px auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.two__columns_main-text {
+
+    line-height: 34px;
+    font-size: 24px;
+    width: 80%;
+    min-width: 784px;
+}
+
+.two__columns-paragraph {
+    margin-bottom: 30px;
+}
+
+.two__columns_span-accent {
+    line-height: 34px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* DIgits */
+.digits {
+    margin-top: 100px;
+}
+
+.digits__title {
+    line-height: 69px;
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+    width: 60%;
+    margin: 100px auto 20px;
+}
+
+.digits__subtitle {
+    line-height: 34px;
+    font-size: 24px;
+    text-align: center;
+    width: 60%;
+    margin: 0px auto;
+}
+
+.digits__table {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1100px;
+    margin: 100px auto;
+
+}
+
+.digits__cell {
+    width: 250px;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+.digits__cell p {
+    line-height: 1.2;
+    font-size: 17px;
+}
+
+
+.digits__cell-heading {
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+/* Feinman */
+.feinman {
+
+    position: relative;
+    align-items: center;
+    min-height: 790px;
+
+}
+
+.feinman__title {
+    margin: 100px auto 70px;
+    text-align: center;
+    width: 648px;
+    line-height: 1.15;
+    font-size: 120px;
+    font-weight: 600;
+}
+
+.feinman__subtitle {
+    line-height: 51px;
+    font-size: 36px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.feinman__img {
+    /* height: 637px;
+    width: 867px; */
+    position: absolute;
+    left: -210px;
+    bottom: 0;
+    z-index: -1;
+}
+
+.rennigan {
+    width: 570px;
+    left: 59px;
+    bottom: 218px;
+    position: absolute;
+    z-index: -2;
+    animation: rotation 20s infinite linear reverse;
+}
+
+.feinman__link {
+    color: #000;
+    font-size: 36px;
+    line-height: 51px;
+    text-decoration: none;
+    position: absolute;
+    top: 310px;
+    right: 48px;
+}
+
+
+/* Kaufman */
+.kaufman {
+    position: relative;
+    overflow: hidden;
+    min-height: 850px;
+    min-width: 1100px;
+    background-color: #1f1f1f;
+    color: #fff;
+
+}
+
+.kaufman__title {
+    z-index: 3;
+    line-height: 69px;
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+    width: 60%;
+    margin: 0px auto 20px;
+    padding-top: 90px;
+}
+
+.kaufman__subtitle {
+    z-index: 2;
+    line-height: 34px;
+    font-size: 24px;
+    text-align: center;
+    width: 60%;
+    margin: 0px auto;
+}
+
+.kaufman__table {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1100px;
+    margin: 100px auto;
+
+}
+
+.kaufman__cell {
+    z-index: 2;
+    width: 200px;
+    margin-top: 60px;
+    margin-left: 20px;
+}
+
+.kaufman__cell p {
+    line-height: 1.2;
+    font-size: 17px;
+}
+
+
+.kaufman__cell-heading {
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.kaufman__img {
+    position: absolute;
+    right: -210px;
+    animation: opacityRev 20s linear infinite, rotation 20s infinite linear;
+}
+
+.kaufman__imgRas {
+    width: 660px;
+    position: absolute;
+    right: -150px;
+    animation: rotation 20s infinite linear;
+
+}
+
+/* footer */
+
+.footer {
+    position: relative;
+    background-color: #1f1f1f;
+    color: #fff;
+    min-height: 350px;
+    min-width: 1100px;
+}
+
+.footer__columns {
+    padding-top: 60px;
+    margin-bottom: 40px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    min-width: 1600px;
+}
+
+.footer__column-copyright {
+    flex-direction: column;
+}
+
+.footer__author {
+    margin-top: 18px;
+    margin-bottom: 18px;
+    position: absolute;
+    bottom: 30px;
+    left: 64px;
+    line-height: 25px;
+    font-size: 18px;
+}
+
+.footer__author a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer__logo {
+    width: 183px;
+    height: 35px;
+    position: relative;
+    left: 64px;
+}
+
+.footer__column-info {
+
+    flex-direction: column;
+    width: 135px;
+}
+
+.footer__column-social {
+    flex-direction: column;
+    width: 115px;
+}
+
+.column__heading {
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.footer__links {
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.footer__column-info a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 50px;
+}
+
+.footer__column-social a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+
+/* technics */
+.technics {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.technics__title {
+    z-index: 3;
+    line-height: 69px;
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+    width: 60%;
+    margin: 0px auto 20px;
+    padding-top: 90px;
+}
+
+.technics__subtitle {
+    z-index: 2;
+    line-height: 34px;
+    font-size: 24px;
+    text-align: center;
+    width: 60%;
+    margin: 0px auto;
+}
+
+.technics__table {
+    display: flex;
+    flex-wrap: wrap;
+    width: 920px;
+    margin: auto;
+
+}
+
+.technics__cell {
+    z-index: 2;
+    width: 200px;
+    margin-top: 60px;
+    margin-left: 100px;
+}
+
+.technics__cell p {
+    text-align: center;
+    line-height: 1.2;
+    font-size: 17px;
+}
+
+
+.technics__cell-heading {
+    white-space: nowrap;
+    text-align: center;
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.technics__img {
+    width: 160px;
+    margin: 60px 25px 43px;
+    border-radius: 50%;
+}
+
+.technics__img_sharOne:hover {
+    content: url(/images/Sharingan/kisspng-sasuke-uchiha-kakashi-hatake-itachi-uchiha-madara-5d2c37a610eeb4.8798684215631789180694.png);
+    animation: rotation 20s infinite linear;
+}
+
+.technics__img_sharTwo:hover {
+    content: url(/images/Sharingan/kisspng-uchiha-clan-sasuke-uchiha-obito-uchiha-apple-you-b-sharingan-5b2085e87ba538.2861408015288580885065.png);
+    animation: rotation 20s infinite linear;
+}
+
+.technics__img_sharThree:hover {
+    content: url(/images/Sharingan/klipartz.com.png);
+    animation: rotation 20s infinite linear;
+}
+
+.technics__img_sharFour:hover {
+    content: url(/images/Sharingan/klipartz.com\ \(1\).png);
+    animation: rotation 20s infinite linear;
+}
+
+.technics__img_sharFife:hover {
+    content: url(/images/Sharingan/klipartz.com\ \(2\).png);
+    animation: rotation 20s infinite linear;
+}
+
+
+
+/* Video */
+.video {
+    position: relative;
+
+    background-color: #fff;
+
+}
+
+.video__player {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.video__player iframe {
+    transform: translateY(50px);
+    margin-left: 20px;
+}
+
+/* Khan */
+
+.khan {
+    width: 80%;
+    margin: 105px auto 0;
+}
+
+.book__container {
+    margin-top: 68px;
+    display: flex;
+}
+
+.book__container a {
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.khan__quote {
+    line-height: 34px;
+    font-size: 24px;
+    width: 790px;
+    margin-top: 50px;
+    margin-bottom: 36px;
+}
+
+.quote__author {
+    line-height: 1.15;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.quote__author_subline {
+    line-height: 1.15;
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.khan__author {
+    line-height: 42px;
+    font-size: 30px;
+    margin: 0;
+}
+
+.khan__title {
+    line-height: 1.15;
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.book__link {
+    line-height: 42px;
+    font-size: 30px;
+}
+
+
+/* Logo-zone */
+.logo__zone {
+    width: 1100px;
+    margin: 80px auto 217px;
+}
+
+.logo__zone li {
+    list-style: none;
+
+}
+
+.logo__zone_list {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.logo__zone_list img {
+    width: 270px;
+    height: 38px;
+}
+
+.resources__title {
+    z-index: 3;
+    line-height: 69px;
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+    width: 60%;
+    margin: 0px auto 20px;
+    padding-top: 100px;
+}
+
+.resources__subtitle {
+    z-index: 2;
+    line-height: 34px;
+    font-size: 24px;
+    text-align: center;
+    width: 60%;
+    margin: 0px auto;
+}
