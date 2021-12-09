@@ -542,7 +542,7 @@ html {
 }
 
 .technics__img_sharThree:hover {
-    content: url('/images/Sharingan/klipartz.com.png');
+    content: url('https://github.com/crakedjack/ShinobiPraktikum/blob/dev/images/Sharingan/klipartz.com.png');
     animation: rotation 20s infinite linear;
 }
 
